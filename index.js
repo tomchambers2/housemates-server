@@ -2,6 +2,8 @@
 var http = require('http');
 var url = require('url');
 
+var port = process.env.PORT || 5000;
+
 http.createServer(function (req, res) {
 	res.writeHead(200);
 
@@ -13,7 +15,7 @@ http.createServer(function (req, res) {
 	}
 
 	res.end();
-}).listen(5000);
+}).listen(port);
 
 var distance = require('gps-distance');
 
