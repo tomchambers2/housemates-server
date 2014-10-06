@@ -1,0 +1,17 @@
+{
+  "name": "roommates-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^1.1.0",
+    "gps-distance": "0.0.3",
+    "http": "0.0.0",
+    "url": "^0.10.1"
+  }
+}
