@@ -11,7 +11,9 @@
   "dependencies": {
     "firebase": "^1.1.0",
     "gps-distance": "0.0.3",
+    "hapi": "^6.11.1",
     "http": "0.0.0",
+    "mandrill-api": "^1.0.40",
     "url": "^0.10.1"
   }
 }
