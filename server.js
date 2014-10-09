@@ -3,7 +3,7 @@ var email = require('./email');
 var creatematches = require('./creatematches');
 
 var port = process.env.PORT || 5000;
-var server = new Hapi.Server(port);
+var server = new Hapi.Server(port, { cors: true });
 
 server.start(function() {
 	console.log('Server running at:', server.info.uri);
