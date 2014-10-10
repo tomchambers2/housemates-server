@@ -18,7 +18,7 @@ for (var i = 0; i < 10; i++) {
      		radius: 2950.137884942776
      	},
      	mainType: random(['househunter','hasroom']),
-     	subType: random([[{wantbuddy: true},{wantroom: false}],[{wantbuddy: false},{wantroom: true}],[{wantbuddy: false},{wantroom: false}],[{wantbuddy: true},{wantroom: true}]]),
+     	subType: random([{wantbuddy: true,wantroom: false},{wantbuddy: false,wantroom: true},{wantbuddy: false,wantroom: false},{wantbuddy: true,wantroom: true}]),
      	answers: {"-JY_IKlpqJHA69iXbGf7": random([0,1,2,3,4,5]),"-JY_Mn9eVM3p1NsCRY2m": random([0,1,2,3,4])},
      	age_range: {
      		min: 21
