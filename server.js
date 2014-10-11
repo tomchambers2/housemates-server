@@ -20,9 +20,9 @@ server.route({
 
 server.route({
 	method: 'GET',
-	path: '/sendemail/{email}/{subject}/{message}',
+	path: '/sendemail/{email}/{from}/{subject}/{message}',
 	handler: function(request, reply) {
-		email.send(request.params.email,encodeURIComponent(request.params.subject),encodeURIComponent(request.params.message));
+		email.send(request.params.email,request.params.from,encodeURIComponent(request.params.subject),encodeURIComponent(request.params.message));
 		reply('emails called for '+encodeURIComponent(request.params.email));
 	}
 });
