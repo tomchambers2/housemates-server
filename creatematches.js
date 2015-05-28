@@ -19,6 +19,7 @@ function startBuild(uid) {
 function average(array) {
 	var sum = 0;
 	for (var i = 0; i < array.length; i++) {
+		console.log('array is',array[i]);
 		sum += array[i];
 	}
 	return sum / array.length;
@@ -80,7 +81,7 @@ function createMatches(uid, user) {
 		var match = {
 			user1: uid,
 			user2: otherUser,
-			similiarityScore: averageDifference,
+			similiarityScore: 100,
 			distance: calcDistance,
 			hello: 'tom!'
 		}
